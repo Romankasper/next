@@ -1,8 +1,9 @@
 import React from 'react';
 import UsersComponent from "@/app/components/users/UsersComponent";
+import {IUser} from "@/app/Models/IUser";
 
 const Userspage = async () => {
-    const users = await fetch('https://jsonplaceholder.typicode.com/users')
+    const users:IUser[] = await fetch('https://jsonplaceholder.typicode.com/users')
         .then(value => value.json())
     return (
         <div>

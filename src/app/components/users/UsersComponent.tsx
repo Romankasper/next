@@ -1,7 +1,8 @@
 import React, {FC} from 'react';
 import Link from "next/link";
+import {IUser} from "@/app/Models/IUser";
 type Props ={
-    users:{id:number,name:string}[]
+    users:IUser[]
 }
 const UsersComponent:FC<Props>= ({users}) => {
     return (
